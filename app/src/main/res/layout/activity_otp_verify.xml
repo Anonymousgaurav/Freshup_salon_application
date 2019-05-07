@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OTP.OTP_verify"
+    android:id="@+id/ll1"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linearlayout1">
+
+
+    <RelativeLayout
+        android:id="@+id/rlotp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/backgrond_"
+                android:layout_marginTop="-70dp"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-75dp"
+                android:src="@drawable/logo2" />
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlotp"
+        android:layout_marginTop="-170dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/cview"
+        app:cardCornerRadius="16dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verification"
+            android:textSize="12sp"
+            android:textColor="#ECB50F"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvverify"
+            android:layout_marginTop="15dp"
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Your Verification Code"
+                android:textSize="12sp"
+                android:layout_below="@id/tvverify"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:textColor="#0A0A0A"
+                android:id="@+id/tvverifycode"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/tvverifycode"
+                android:weightSum="4"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/llotp"
+                >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/etemail"
+                    android:textSize="20sp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:id="@+id/otp1"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/etemail"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:id="@+id/otp2"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/etemail"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:id="@+id/otp3"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/etemail"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:id="@+id/otp4"
+                    />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ShowPopup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llotp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="50dp"
+                android:background="@drawable/button_sign_in"
+                android:text="SIGN IN"
+                android:textColor="#fff"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textSize="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend verification Code "
+                android:layout_below="@+id/ShowPopup"
+                android:id="@+id/resend_tv"
+                android:layout_marginTop="20sp"
+                android:layout_marginBottom="30sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000"/>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+</ScrollView>

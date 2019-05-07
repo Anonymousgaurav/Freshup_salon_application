@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cv_services1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/service_rl"
+            >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/hair_cutting"
+        android:id="@+id/custom_img_services"
+        android:padding="35dp"
+        android:background="@drawable/hair_cutting_imae"
+        />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hair Cutting"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:layout_below="@id/custom_img_services"
+            android:layout_marginTop="-25dp"
+            />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_below="@id/cv_services1"
+        android:id="@+id/cv_services2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/service_rl2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/looks___tresses"
+            android:id="@+id/custom_img_services2"
+            android:padding="35dp"
+            android:background="@drawable/looks___tresses_background"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Looks &amp; Tresses"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:layout_below="@id/custom_img_services2"
+                android:layout_marginTop="-25dp"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        android:id="@+id/cv_services3"
+        android:layout_below="@id/cv_services2">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/service_rl3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@drawable/packges"
+            android:id="@+id/custom_img_services3"
+            android:padding="35dp"
+            android:background="@drawable/p_background_"
+            />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Packages"
+                android:textColor="#FFBF00"
+                android:textAlignment="center"
+                android:layout_below="@id/custom_img_services3"
+                android:layout_marginTop="-39dp"
+                android:textSize="18sp"
+                />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

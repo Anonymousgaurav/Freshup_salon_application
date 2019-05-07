@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Payment.Payment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pymnttoolbar"
+            android:background="#000000">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/back_arrowwhite"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:layout_centerHorizontal="true"
+                />
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_payment"
+        android:id="@+id/rlpaymnet"
+        android:layout_below="@id/pymnttoolbar"
+        android:layout_marginTop="-20dp"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cart"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_below="@id/rlpaymnet"
+        android:layout_marginTop="-50dp"
+        android:padding="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        app:cardCornerRadius="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rlpay"
+            android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/rldebitcard"
+            android:background="@drawable/payment_layout"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/visa"
+                android:id="@+id/visa"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Debit Card"
+                android:layout_toRightOf="@id/visa"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/drop_up_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="10dp"
+                />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rldebitcard"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:id="@+id/l2"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/pname"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Surname"
+                android:layout_alignParentRight="true"
+                android:id="@+id/psurname"
+                android:layout_marginRight="10dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                />
+
+
+        </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_below="@id/l2"
+                android:id="@+id/llet">
+
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pname"
+                android:layout_alignParentLeft="true"
+                android:hint="Upkar"
+                android:background="@drawable/payment_layout"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/psurname"
+                android:hint="Singh"
+                android:background="@drawable/payment_layout"
+                android:layout_marginRight="10dp"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                />
+
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/llet"
+                android:id="@+id/tvcardno"
+                android:layout_marginTop="15dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Card Number"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    android:layout_marginLeft="10dp"
+                    />
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvcardno"
+                    android:padding="5dp"
+                    android:id="@+id/etcardno"
+                    android:layout_marginTop="10dp"
+                    >
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="123 456 789"
+                        android:padding="8dp"
+                        android:paddingStart="15dp"
+                        android:background="@drawable/payment_layout"
+                        />
+
+                </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etcardno"
+                android:padding="10dp"
+                android:id="@+id/l4"
+                >
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expiry Date"
+                    android:drawableRight="@drawable/circled_help_copy"
+                    android:layout_marginLeft="2dp"
+                    android:layout_alignParentLeft="true"
+                    android:drawablePadding="15dp"
+                    android:padding="15dp"
+                    />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CVV"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dp"
+                    android:drawableRight="@drawable/circled_help_copy"
+                    android:drawablePadding="15dp"
+                    android:padding="15dp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l4"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:layout_marginBottom="25dp"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Verify"
+                    android:textColor="#fff"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/button_sign_in"
+                    android:padding="15dp"
+                    android:layout_marginLeft="65dp"
+                    android:layout_marginRight="65dp"
+                    android:textSize="17sp"
+
+                    />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+</ScrollView>

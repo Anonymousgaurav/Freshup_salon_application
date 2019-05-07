@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.swag">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Booking_slot.Booking_slot_time"></activity>
+        <activity android:name=".Services_haircutting.Services_haircutting" />
+        <activity android:name=".Calender_Time.Time_slot" />
+        <activity android:name=".Services_products.Services_items" />
+        <activity android:name=".Services_products.Products" />
+        <activity android:name=".Services_haircut.services_haircut" />
+        <activity android:name=".Profile_save.profile_save" />
+        <activity android:name=".Profile_edit.profile_edit" />
+        <activity android:name=".POP_UP.popup_otp_verified" />
+        <activity android:name=".Change_password.change_password" />
+        <activity android:name=".Payment.Payment" />
+        <activity android:name=".BottonNav_setting.BottomNav_setting" />
+        <activity android:name=".Services_products.Services" />
+        <activity android:name=".Sevices_products.services_products" />
+        <activity android:name=".Services_Products.services_products" />
+        <activity android:name=".Mobile_verified.Mobile_verified" />
+        <activity android:name=".OTP.OTP_verify" />
+        <activity android:name=".Sign_up.Sign_up" />
+        <activity android:name=".Sign_in.Sign_in" />
+        <activity android:name=".Intro.Introduction" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

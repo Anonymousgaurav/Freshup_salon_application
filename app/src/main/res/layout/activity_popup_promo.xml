@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/background_promo"
+                android:id="@+id/img_promo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ENTER YOUR PROMO CODE"
+                android:layout_below="@id/img_promo"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="-180dp"
+                android:textColor="#000000"
+                android:id="@+id/tvpromo"
+                />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvpromo"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/promoo"
+                    android:hint="Promo"
+                    android:padding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="100dp"
+                    android:id="@+id/apply"
+                    android:paddingStart="25dp"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/apply"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="150dp"
+                    android:text="APPLY"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button_sign_in"
+                    android:textColor="#ffffff"
+                    android:layout_centerInParent="true"
+                    android:padding="15dp"
+                    android:textSize="16sp"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</ScrollView>

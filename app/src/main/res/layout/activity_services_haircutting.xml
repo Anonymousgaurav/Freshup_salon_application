@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Services_haircutting.Services_haircutting">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:id="@+id/sub_serv_bac_image"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hair_cutting_imae"
+        android:adjustViewBounds="true"
+        />
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/sub_serv_main_image"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sub_serv_main_image"
+        android:text="PRESENTATIONS"
+        android:id="@+id/sub_serv_title"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp"/>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/sub_serv_title"
+        android:layout_marginLeft="50sp"
+        android:layout_centerHorizontal="true"
+        android:elevation="20dp"
+        app:cardCornerRadius="20sp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:id="@+id/search_bar_presentations"
+                android:background="@drawable/detailbox"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_centerHorizontal="true">
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/serach_img"
+                    android:layout_marginLeft="5sp"
+                    android:src="@drawable/search_hair"
+                    android:layout_gravity="center_vertical"/>
+
+                <EditText
+                    android:backgroundTint="@color/white"
+                    android:layout_gravity="start"
+                    android:hint="Search services"
+                    android:layout_width="match_parent"
+                    android:gravity="start"
+                    android:textColor="#000"
+                    android:padding="10dp"
+                    android:maxLength="15"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/search_bar_presentations"
+                android:layout_marginTop="5sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30sp"
+                android:layout_marginBottom="5sp"
+                android:id="@+id/services_type">
+
+            </android.support.v7.widget.RecyclerView>
+            <Button
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:text="Continue"
+                android:id="@+id/btn_continue"
+                android:textColor="@android:color/white"
+                android:layout_below="@+id/services_type"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="10sp"
+                android:background="@drawable/button_sign_in"
+                android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
